@@ -1,0 +1,20 @@
+
+team_a:
+  projects:
+    - name: qa-a-1
+      auto_create_network: true
+      services:
+        - sql-component.googleapis.com       
+team-b:
+  projects:
+    - name: qa-b-1
+      auto_create_network: false
+      services:
+        - sql-component.googleapis.com  
+    - name: dev-b-1
+      auto_create_network: false
+      services:
+        - sql-component.googleapis.com,
+        - pubsub.googleapis.com
+    
+  
